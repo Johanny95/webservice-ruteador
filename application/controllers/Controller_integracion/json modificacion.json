@@ -1,0 +1,19 @@
+{
+"id"				:27925971,
+"title" 			:"TMAX INVERSIONES SPA",
+"planned_date" 		:"2020-01-03",
+"operacion" 		:"CDS-TRADICIONA",
+"address" 			:"POETA ANGEL CRUCHAGA #1515,LA REINA",
+"window_start" 		:"07:00",
+"window_end" 		:"19:00",
+"window_start_2"	:null,
+"window_end_2" 		:null,
+"duration" 			:"00:07:00",
+"notes"				:"2770101M_03-01-2019",
+"latitude" 			:null,
+"longitude" 		:null,
+"load" 				:43,
+"load_2" 			:0,
+"load_3" 			:0,
+"visit_type"		:"330037"
+}
