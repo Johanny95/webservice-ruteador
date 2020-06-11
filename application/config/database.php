@@ -73,11 +73,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 /*prod*/
- $tnsname_web = '(DESCRIPTION =(ADDRESS_LIST =(ADDRESS =(PROTOCOL = TCP)
- 	(HOST = 139.10.10.90)(PORT = 1539)))(CONNECT_DATA =(SID = PFPROD)(SERVER = DEDICATED)))';
+ // $tnsname_web = '(DESCRIPTION =(ADDRESS_LIST =(ADDRESS =(PROTOCOL = TCP)
+ // 	(HOST = 139.10.10.90)(PORT = 1539)))(CONNECT_DATA =(SID = PFPROD)(SERVER = DEDICATED)))';
 
-// $tnsname_web = '(DESCRIPTION =(ADDRESS_LIST =(ADDRESS =(PROTOCOL = TCP)
-//  	(HOST = 139.10.10.78)(PORT = 1531)))(CONNECT_DATA =(SID = PFTEST)(SERVER = DEDICATED)))';
+$tnsname_web = '(DESCRIPTION =(ADDRESS_LIST =(ADDRESS =(PROTOCOL = TCP)
+ 	(HOST = 139.10.10.78)(PORT = 1531)))(CONNECT_DATA =(SID = PFTEST)(SERVER = DEDICATED)))';
  	
 $active_group = 'default';
 $query_builder = TRUE;

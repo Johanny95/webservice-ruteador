@@ -59,7 +59,6 @@ if(!in_array($_SERVER['REMOTE_ADDR'], $this->config->item('maintenance_ips')) &&
 	$route['default_controller'] = 'c_login/cerrar_sesion';
 }
 
-
 ////////////////////
 // Meta reponedor //
 ////////////////////
@@ -82,7 +81,7 @@ $route['get_visit_by_day']					  = 'Controller_integracion/C_rutas_integracion/g
 $route['integrar_rutas_det']				  = 'Controller_integracion/C_rutas_integracion/integrar_rutas_det';
 
 /*integracion visitas*/
-$route['crear_visitas']						  = 'Controller_integracion/C_visitas_integracion/crear_visitas';
+// $route['crear_visitas']						  = 'Controller_integracion/C_visitas_integracion/crear_visitas';
 $route['actualizar_visitas']				  = 'Controller_integracion/C_visitas_integracion/upd_visitas_ruteador';
 $route['eliminar_visitas']					  = 'Controller_integracion/C_visitas_integracion/del_visitas_ruteador';
 
@@ -90,6 +89,25 @@ $route['eliminar_visitas']					  = 'Controller_integracion/C_visitas_integracion
 $route['del_visitas_prueba']				  = 'Controller_integracion/C_visitas_integracion/visitas_by_day';
 
 
+/*ADD ID DE CAMIONES Y CHOFERES YA CREADOS EN SIMPLIROUTE*/
+$route['get_id_chofer']						  = 'Controller_integracion/C_chofer_integracion/cargar_code_chofer';
+$route['get_id_camion']						  = 'Controller_integracion/C_camion_integracion/add_id_camiones_ruteador';
+
+
+$route['add_chofer']						  = 'Controller_integracion/C_chofer_integracion/add_chofer_ruteador';
+$route['upd_chofer']						  = 'Controller_integracion/C_chofer_integracion/upd_chofer_ruteador';
+$route['del_chofer']						  = 'Controller_integracion/C_chofer_integracion/del_chofer_ruteador';
+
+
+$route['delete_camiones_prueba']			  = 'Controller_integracion/C_visitas_integracion/delete_camiones';
+
 
 /*06-04-2020*/
 $route['rutas_oracle']		  				  = 'Controller_integracion/C_rutas_integracion/oracle_rutas_visitas';
+
+
+
+
+/*prueba*/
+$route['get_visitas_creadas']				  = 'Controller_integracion/C_creacion_visitas/get_visitas_creadas';
+$route['crear_visitas']						  = 'Controller_integracion/C_creacion_visitas/crear_visitas';	

@@ -32,6 +32,7 @@ class M_integracion_visitas extends CI_Model {
 
 
     public function add_id_ruteador($visit){
+
         $aux;
         $sp  = oci_parse( $this->db->conn_id, "BEGIN PF_INTEGRACION_RUTEADOR.SP_ADD_ID_RUTEADOR(:V_CLICODIGO,:V_OFICINA_ID,:V_FECHA_PEDIDO,:V_FECHA_FACTURA,:V_OPERACION,:V_ID_RUTEADOR,:V_ESTADO_PROCESO); END;" );
         oci_bind_by_name($sp, ":V_CLICODIGO"      ,   $visit['clicodigo']);
