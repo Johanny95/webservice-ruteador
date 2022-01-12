@@ -39,6 +39,7 @@ class WS_Controller extends CI_Controller{
 			CURLOPT_TIMEOUT => 300,
 			CURLOPT_SSL_VERIFYPEER=> false,
 			CURLOPT_SSL_VERIFYHOST=> 0,
+			CURLOPT_SSLVERSION => 6,
 			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 			CURLOPT_CUSTOMREQUEST => $metodo,
 			CURLOPT_POSTFIELDS => json_encode($element),

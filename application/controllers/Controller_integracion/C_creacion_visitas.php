@@ -41,8 +41,6 @@ class C_creacion_visitas extends WS_Controller {
 					$this->get_visitas_creadas($op);
 
 					$visits =  $this->M_visitas->get_visitas($operacion);
-
-
 					$array_enviado = array();
 
 					foreach ($visits as $key_visit => $visita) {
